@@ -10,4 +10,4 @@
  - new objects can be created with a constructor function, like `new F()`
  - The  `F.prototype`  property (don’t mistake it for  `[[Prototype]]`) sets  `[[Prototype]]`  of new objects when  `new F()`  is called.
  - The default `"prototype"` is an object with the only property `constructor` that points back to the function itself. 
-	 - We should modify `F.prototype` carefully. If we override the default constructor property, `new F()` will not work. In our code we override Student's prototype with Person (line 39). This brings everything is Person's prototype chain to Student. In next line, we add the default `constructor` property back.  
+	 - We should modify `F.prototype` carefully. If we override the default constructor property, `new F()` will not work. In our code we override Student's prototype with Person (line 39). This brings everything is Person's prototype chain to Student. In next line, we add the default `constructor` property back.
