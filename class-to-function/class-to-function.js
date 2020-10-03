@@ -36,7 +36,8 @@ function Student(name, klass) {
     Person.call(this, name);
     this.klass = klass;
 }
-Student.prototype = new Person;
+// Student.prototype = new Person;
+Student.prototype = Object.create(Person.prototype);
 Student.prototype.constructor = Student
 Student.prototype.getKlass = function() {
   console.log(this.klass)
